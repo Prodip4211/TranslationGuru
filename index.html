@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Challenger by PR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="interface">
+        <h1>Translation Challenger by PR</h1>
+        <h3>App developer: Prodip Roy</h3>
+        <button id="startGame">খেলা শুরু করুন</button>
+        <button id="settingsButton">সেটিংস</button>
+    </div>
+
+    <div id="gameArea" style="display: none;">
+        <div id="question"></div>
+        <input type="text" id="answerInput" placeholder="উত্তর লিখুন">
+        <button id="submitAnswer">উত্তর দিন</button>
+        <div id="reaction"></div>
+        <div id="score"></div>
+        <button id="pauseGame">Paused</button>
+    </div>
+
+    <div id="settingsArea" style="display: none;">
+        <h2>Settings</h2>
+        <label for="newQuestion">নতুন প্রশ্ন:</label>
+        <input type="text" id="newQuestion" placeholder="প্রশ্ন লিখুন">
+        <label for="newAnswer">উত্তর:</label>
+        <input type="text" id="newAnswer" placeholder="উত্তর লিখুন">
+        <button id="addQuestion">প্রশ্ন যুক্ত করুন</button>
+        <button id="deleteQuestion">প্রশ্ন মুছে ফেলুন</button>
+        
+        <label for="timeLimit">প্রশ্নের সময় নির্ধারণ:</label>
+        <input type="number" id="timeLimit" value="5">
+        
+        <label for="questionCount">প্রশ্ন সংখ্যা নির্ধারণ:</label>
+        <input type="number" id="questionCount" value="3">
+        
+        <label for="darkModeToggle">Dark Mode:</label>
+        <input type="checkbox" id="darkModeToggle">
+        
+        <button id="saveSettings">Save Settings</button>
+        <button id="backToGame">Back to Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
